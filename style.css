@@ -1,4 +1,4 @@
-/* FONTS */ 
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .montserrat-normal {
@@ -57,8 +57,8 @@ body {
   max-width: 375px;
   margin: 2rem auto 4rem auto;
   background-color: var(--clr-neutral-white);
-  border-radius: 10px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -78,46 +78,47 @@ body {
   min-width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 1rem;
 
   & span.overline {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     color: var(--clr-neutral-grey);
-    letter-spacing: 0.4rem;
+    letter-spacing: 0.3rem;
   }
 
   & h1 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     line-height: 1.1;
-    color: var(--clr-primary-green-700);
+    color: var(--clr-neutral-black);
+    margin: 0;
   }
 
   & p {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: 1.7;
     color: var(--clr-neutral-grey);
     letter-spacing: 0.05rem;
-    hyphens: auto;
+    margin: 0;
   }
 }
 
 .pricing {
   list-style: none;
   display: flex;
+  align-items: center;
+  gap: 0.5rem;
 
   & .current-price {
-    font-size: 1.7rem;
+    margin-inline-start: 1rem;
+    font-size: 2rem;
     color: var(--clr-primary-green-500);
-    margin-right: 1rem;
   }
 
   & .original-price {
-    font-size: 1rem;
+    font-size: 0.875rem;
     color: var(--clr-neutral-grey);
     text-decoration: line-through;
-    align-self: center;
   }
 }
 
@@ -134,8 +135,8 @@ button.add-to-cart {
 
   & img {
     width: 1rem;
-    margin-right: 0.5rem;
-    vertical-align: middle;
+    margin-inline-end: 0.5rem;
+    vertical-align: text-bottom;
   }
 
   &:hover {
@@ -144,19 +145,22 @@ button.add-to-cart {
 }
 
 @media (min-width: 700px) {
-  
+
   .product-card {
     max-width: 700px;
     display: flex;
     flex-direction: row;
+    border-radius: 15px;
   }
 
   .product-details {
     flex: 1;
+    align-self: center;
     padding: 2rem;
+    gap: 1.75rem;
 
     & h1 {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
   }
