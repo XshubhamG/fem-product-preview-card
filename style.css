@@ -45,16 +45,11 @@
 
 /* MAIN */
 body {
-  background-color: var(--clr-neutral-cream);
   color: var(--clr-neutral-black);
+  background-color: var(--clr-neutral-cream);
+  height: 100vh;
   font-size: 1rem;
   line-height: 1.5;
-}
-
-.container {
-  margin: 0 auto;
-  height: 100vh;
-  padding: 1rem;
   align-content: center;
 }
 
@@ -66,7 +61,6 @@ body {
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
-
 
 .product-image {
   display: block;
